@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.teal,
       ),
       home: HomeNavigationPage(0),
     );
@@ -54,7 +54,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           unselectedItemColor: Colors.grey,
-          selectedItemColor: Colors.greenAccent,
+          selectedItemColor: Colors.teal.shade300,
           currentIndex: widget.currentIndex,
           onTap: (index) => setState(() {
             widget.currentIndex = index;
